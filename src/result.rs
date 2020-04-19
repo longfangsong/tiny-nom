@@ -3,7 +3,9 @@ pub enum ErrorKind {
     Tag,
     Alt,
     Recognize,
-    Tuple
+    Tuple,
+    Alpha,
+    Digit,
 }
 
 pub type IResult<I, O, E = (I, ErrorKind)> = Result<(I, O), E>;
